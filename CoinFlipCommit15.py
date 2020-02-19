@@ -1,9 +1,8 @@
 import random
 
-'''Valid Input Functions'''
 
 def validguess():
-  ''' checks that guess is valid'''
+  """checks that guess is valid"""
   validguess = False
   guess = input("Heads or Tails?:")
   if (guess != "Heads") and (guess != "Tails"):
@@ -17,7 +16,7 @@ def validguess():
     return guess
 
 def validbet():
-  '''checks that bet is valid'''
+  """checks that bet is valid"""
   validbet=False
   bet = input("How much would you like to bet? 2, 5 or 10 pounds?: ")
   while validbet == False:
@@ -30,7 +29,7 @@ def validbet():
     return int(bet)
 
 def validchoice():
-  '''checks choice to play is a valid input'''
+  """checks choice to play is a valid input"""
   validchoice = False
   choice = input("Would you like to play again, y/n?: ")
   if (choice != "y") and (choice != "n"):
@@ -45,7 +44,7 @@ def validchoice():
 
 
 def coin_flip_game(guess, bet):
-  '''coin flip function'''
+  """coin flip function"""
   money_won = 0
   money_won += bet
   money_lost= 0
